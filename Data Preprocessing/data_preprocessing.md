@@ -1,4 +1,4 @@
-##Importing libraries
+## Importing libraries
 ```
 import pandas as pd
 import numpy as np
@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 ---
 
-##Importing dataset
+## Importing dataset
 ```
 dataset = pd.read_csv(path_to_dataset)
 ```
@@ -21,7 +21,7 @@ dtype: object
 ```
 ---
 
-##Interpolation v/s Imputing
+## Interpolation v/s Imputing
 
 **Interpolation**  
 Interpolation (linear) is basically a straight line between two given points where data points between these two are missing. In this case the values that replaces missing nan values can be different.
@@ -29,14 +29,14 @@ Interpolation (linear) is basically a straight line between two given points whe
 **Imputation**  
 Imputation is filling the missing values with the mean or meadian of the whole column. In this case all the nan values in the column will be replaced by the same value.
 
-###When to choose what?
+### When to choose what?
 
 **Imputation**: If you are given a dataset of patients with a disease (say Pneumonia) and there is a feature called body temperature. So, if there are null values for this feature then you can replace it by average value i.e. Imputation.
 
 **Interpolation**: If you are given a dataset of the share price of a company, you know that every Saturday and Sunday are off. So those are missing values. Now, these values can be filled by the average of Friday value and Monday value i.e. Interpolation.
 
 
-##Interpolating the missing values
+## Interpolating the missing values
 ```
 #explaining what missing values are and which strategy to use like mean, median
 imputer = SimpleImputer(missing_values = np.nan, strategy = "mean")
@@ -49,7 +49,7 @@ imputer.fit(X[:,1:3])
 X[:,1:3] = imputer.transform(X[:,1:3])
 ```
 
-##Interpolating the missing values
+## Interpolating the missing values
 ```
 dataset["Salary"] = dataset["Salary"].interpolate()
 dataset["Age"] = dataset["Age"].interpolate()
