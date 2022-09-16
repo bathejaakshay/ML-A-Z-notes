@@ -66,8 +66,10 @@ y_interpolate = dataset.iloc[:,-1]
 **Standardization**  
 `x_stand = (x - mean(x))/standard deviation (x)`  
 Range : -3 to 3
-
+We can use it in almost every situation.
 
 **Normalization**  
 `x_norm = (x - min(x))/(max(x)-min(x))`  
 Range = 0 to 1
+We use it generally when there is normal distribution between some of the features.
+
