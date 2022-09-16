@@ -77,7 +77,9 @@ We use it generally when there is normal distribution between some of the featur
 Dummy variables are those that we have created e.g one hot encoded vectors.  
 The ans is NO.  
 The goal of feature scaling is to bring every feature into the same scale and because the dummy variables are already in the same range we donot need to apply feature scaling.
-Also apply feature scaling to the dummy variables might loose its significance
+Also apply feature scaling to the dummy variables might loose its significance  
+
+Note : Use the same scaler model for both train and test set.
 
 ---
 
