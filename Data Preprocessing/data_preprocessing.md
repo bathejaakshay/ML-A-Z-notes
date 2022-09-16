@@ -58,3 +58,16 @@ y_interpolate = dataset.iloc[:,-1]
 ```
 
 ---
+
+## Feature Scaling
+
+- Sometimes some features dominate over others as they have large values. Now to get rid of this dominance we scale down the features using normalization or standardization.
+
+**Standardization**  
+`x_stand = (x - mean(x))/standard deviation (x)`  
+Range : -3 to 3
+
+
+**Normalization**  
+`x_norm = (x - min(x))/(max(x)-min(x))`  
+Range = 0 to 1
