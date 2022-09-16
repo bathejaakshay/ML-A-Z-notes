@@ -73,3 +73,11 @@ We can use it in almost every situation.
 Range = 0 to 1
 We use it generally when there is normal distribution between some of the features.
 
+#### Should we apply feature scaling to the dummy variables.
+Dummy variables are those that we have created e.g one hot encoded vectors.  
+The ans is NO.  
+The goal of feature scaling is to bring every feature into the same scale and because the dummy variables are already in the same range we donot need to apply feature scaling.
+Also apply feature scaling to the dummy variables might loose its significance
+
+---
+
