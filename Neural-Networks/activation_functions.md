@@ -47,7 +47,7 @@ The choice of activation function should align with the network’s architecture
      - Both sigmoid and tanh are used in feedforward NNs
    - ReLU (Rectified Linear Unit)
      - range: \[0 to inf)
-     - The function and its derivative both are monotonic.
+     - The function and its derivative both are monotonic. Its mostly used in CNNs
      - No Vanishing gradient issue
      - The issue is that all the negative values become zero immediately which decreases the ability of the model to fit or train from the data properly.
    - Leaky ReLU
