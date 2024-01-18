@@ -56,3 +56,5 @@ The choice of activation function should align with the network’s architecture
     
        
 
+![Activation functions](https://github.com/bathejaakshay/ML-A-Z-notes/blob/main/Images/activation_functions.webp)
+![Activation functions Derivatives](https://github.com/bathejaakshay/ML-A-Z-notes/blob/main/Images/activation_derivatives.webp)
